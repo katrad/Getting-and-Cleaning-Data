@@ -1,7 +1,8 @@
 #Programming Assignment for Getting and Cleansing Data.
 ##Tidying data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-###Background: One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+###Background: 
+One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ###Raw Data:
@@ -18,77 +19,78 @@ For each record in the dataset it is provided:
 
 Link to the Rawdata: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-###Processed data: To contain the computed average of the mean and standard deviation based on subject and activity using data extracted from both training and test set, with activity clearly labelled.
-Each record in the tidy dataset contains the following fields (68). 
+###Processed data: 
+To contain the computed average of the mean and standard deviation based on subject and activity using data extracted from both training and test set, with activity clearly labelled.
+Each record in the tidy dataset contains the following fields (68).
 "mean" in the name suggests that the column has the average mean and "std" has average standard deviation.
-	subject
-	activity
-	tBodyAccmeanX
-	tBodyAccmeanY
-	tBodyAccmeanZ
-	tGravityAccmeanX
-	tGravityAccmeanY
-	tGravityAccmeanZ
-	tBodyAccJerkmeanX
-	tBodyAccJerkmeanY
-	tBodyAccJerkmeanZ
-	tBodyGyromeanX
-	tBodyGyromeanY
-	tBodyGyromeanZ
-	tBodyGyroJerkmeanX
-	tBodyGyroJerkmeanY
-	tBodyGyroJerkmeanZ
-	tBodyAccMagmean
-	tGravityAccMagmean
-	tBodyAccJerkMagmean
-	tBodyGyroMagmean
-	tBodyGyroJerkMagmean
-	fBodyAccmeanX
-	fBodyAccmeanY
-	fBodyAccmeanZ
-	fBodyAccJerkmeanX
-	fBodyAccJerkmeanY
-	fBodyAccJerkmeanZ
-	fBodyGyromeanX
-	fBodyGyromeanY
-	fBodyGyromeanZ
-	fBodyAccMagmean
-	fBodyBodyAccJerkMagmean
-	fBodyBodyGyroMagmean
-	fBodyBodyGyroJerkMagmean
-	tBodyAccstdX
-	tBodyAccstdY
-	tBodyAccstdZ
-	tGravityAccstdX
-	tGravityAccstdY
-	tGravityAccstdZ
-	tBodyAccJerkstdX
-	tBodyAccJerkstdY
-	tBodyAccJerkstdZ
-	tBodyGyrostdX
-	tBodyGyrostdY
-	tBodyGyrostdZ
-	tBodyGyroJerkstdX
-	tBodyGyroJerkstdY
-	tBodyGyroJerkstdZ
-	tBodyAccMagstd
-	tGravityAccMagstd
-	tBodyAccJerkMagstd
-	tBodyGyroMagstd
-	tBodyGyroJerkMagstd
-	fBodyAccstdX
-	fBodyAccstdY
-	fBodyAccstdZ
-	fBodyAccJerkstdX
-	fBodyAccJerkstdY
-	fBodyAccJerkstdZ
-	fBodyGyrostdX
-	fBodyGyrostdY
-	fBodyGyrostdZ
-	fBodyAccMagstd
-	fBodyBodyAccJerkMagstd
-	fBodyBodyGyroMagstd
-	fBodyBodyGyroJerkMagstd
+1 subject
+2 activity
+3 tBodyAccmeanX
+4 tBodyAccmeanY
+5 tBodyAccmeanZ
+6 tGravityAccmeanX
+7 tGravityAccmeanY
+8 tGravityAccmeanZ
+9 tBodyAccJerkmeanX
+10 tBodyAccJerkmeanY
+11 tBodyAccJerkmeanZ
+12 tBodyGyromeanX
+13 tBodyGyromeanY
+14 tBodyGyromeanZ
+15 tBodyGyroJerkmeanX
+16 tBodyGyroJerkmeanY
+17 tBodyGyroJerkmeanZ
+18 tBodyAccMagmean
+19 tGravityAccMagmean
+20 tBodyAccJerkMagmean
+21 tBodyGyroMagmean
+22 tBodyGyroJerkMagmean
+23 fBodyAccmeanX
+24 fBodyAccmeanY
+25 fBodyAccmeanZ
+26 fBodyAccJerkmeanX
+27 fBodyAccJerkmeanY
+28 fBodyAccJerkmeanZ
+29 fBodyGyromeanX
+30 fBodyGyromeanY
+31 fBodyGyromeanZ
+32 fBodyAccMagmean
+33 fBodyBodyAccJerkMagmean
+34 fBodyBodyGyroMagmean
+35 fBodyBodyGyroJerkMagmean
+36 tBodyAccstdX
+37 tBodyAccstdY
+38 tBodyAccstdZ
+39 tGravityAccstdX
+40 tGravityAccstdY
+41 tGravityAccstdZ
+42 tBodyAccJerkstdX
+43 tBodyAccJerkstdY
+44 tBodyAccJerkstdZ
+45 tBodyGyrostdX
+46 tBodyGyrostdY
+47 tBodyGyrostdZ
+48 tBodyGyroJerkstdX
+49 tBodyGyroJerkstdY
+50 tBodyGyroJerkstdZ
+51 tBodyAccMagstd
+52 tGravityAccMagstd
+53 tBodyAccJerkMagstd
+54 tBodyGyroMagstd
+55 tBodyGyroJerkMagstd
+56 fBodyAccstdX
+57 fBodyAccstdY
+58 fBodyAccstdZ
+59 fBodyAccJerkstdX
+60 fBodyAccJerkstdY
+61 fBodyAccJerkstdZ
+62 fBodyGyrostdX
+63 fBodyGyrostdY
+64 fBodyGyrostdZ
+65 fBodyAccMagstd
+66 fBodyBodyAccJerkMagstd
+67 fBodyBodyGyroMagstd
+68 fBodyBodyGyroJerkMagstd
 
 ###Procedure:
 1. Download and unzip the file using the link provided under "Raw Data", which should create a folder "UCI HAR Dataset"
